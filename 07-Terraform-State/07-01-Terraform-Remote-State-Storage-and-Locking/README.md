@@ -28,7 +28,7 @@
 ```
 # Terraform Backend Block
   backend "s3" {
-    bucket = "terraform-stacksimplify"
+    bucket = "terraform-test"
     key    = "dev/terraform.tfstate"
     region = "us-east-1"    
   }
@@ -120,7 +120,7 @@ terraform destroy -auto-approve
 ```t
   # Adding Backend as S3 for Remote State Storage with State Locking
   backend "s3" {
-    bucket = "terraform-stacksimplify"
+    bucket = "terraform-test"
     key    = "dev2/terraform.tfstate"
     region = "us-east-1"  
 
